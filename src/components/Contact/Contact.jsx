@@ -6,7 +6,6 @@ import {BsChat} from "react-icons/bs"
 import {AiOutlineArrowRight} from "react-icons/ai"
 import { Bounce } from "react-reveal";
 
-import { FaGithub, FaLinkedin, FaInstagramSquare, FaTelegram } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 export default function Contact() {
   const [ message, setMessage ] = useState(false);
