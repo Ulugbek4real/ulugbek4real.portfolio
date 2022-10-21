@@ -1,0 +1,222 @@
+
+.navbar{
+    width: 100%;
+    height: 9vh;
+    background-color:#f5f3f0;
+    background-color:#faf8f6;
+    background-color: #F5F6F7;
+    background-color: white;
+    color: hsl(207, 10%, 13%);
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    text-align: center;
+    transition: all 0.5s ease;
+
+  
+
+
+
+    .wrapper{
+        padding: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1150px;
+        @media (max-width:1160px) {
+            width: 87%;
+         }
+        // border-bottom: solid 1px rgb(213, 213, 213);
+        margin: 0 auto;
+        height: 100%;
+
+        .logo{
+            font-size: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            color: inherit;
+            span{
+                font-weight: normal;
+                font-size: 30px;
+            }
+            
+        }
+
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            
+            a{
+                font-size: 25px;
+                align-items: center;
+                display: flex;
+                color: inherit;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+                
+
+    
+                .linkedin{
+                    &:hover{
+                        color:#0077b5;
+                        
+                    }
+                }
+                .instagramm {
+                    &:hover {
+                        color: rgb(221,42,123);
+                       
+                    }
+                }
+    
+                .github {
+                    &:hover {
+                        color: hsl(274, 78%, 29%);
+                    }
+                }
+    
+                .telegram {
+                    &:hover {
+                        color: #0088cc;
+                    }
+                }
+            }
+        }
+        .burger{
+            width: 24px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span{
+                width: 100%;
+                height: 3px;
+                background-color: hsl(207, 10%, 13%);
+                transform-origin: left;
+                transition: all .5s ease;
+            }
+        }
+        .links{
+            display: none;
+           
+
+
+            li{
+                transition: all ease 0.3s;
+                font-weight: 400;
+               
+                &:hover {
+                    transition: all ease 0.3s;
+                    // color: #284b63;
+					transform: scale(1.2);
+                    
+                }
+            }
+        
+        }
+
+    
+    }
+
+    &.active{
+        background-color: hsl(207, 10%, 13%);
+        color: white;
+
+        .burger{
+                .line1{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                .line2{
+                    opacity: 0;
+                }
+                .line3{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            
+            // transform: rotate(180deg);
+            transition: all 1s ease;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .navbar{
+        .wrapper{
+
+            .burger{
+                display: none;
+            }
+            .links{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                gap: 1rem;
+                padding-left: 0;
+               
+                
+                li{
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+            
+            
+            }
+
+
+        }
+    }
+   
+}
+
+@media screen and (min-width: 1020px){
+    .links{
+
+        font-size: larger;
+       
+        li{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.icons{
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+@media screen and (max-width: 570px){
+    .wrapper{
+        .icons{
+            display: none;
+        }
+    }
+      
+    
+}
+
+
+.scrolled{
+    box-shadow: 0 0 5px 1px rgb(201, 195, 195);
+}

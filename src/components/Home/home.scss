@@ -1,0 +1,172 @@
+
+
+.home{
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color:#f5f3f0;
+    background-color:#faf8f6;
+    background-color: #F5F6F7;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    max-width: 1150px;
+  
+// width:87%;
+margin: 0 auto;
+    .home-center{
+        // overflow: scroll;
+        max-width: 1150px;
+        width: 100%;
+        @media (max-width:1160px) {
+            width: 87%;
+         }
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        @media (max-width:57rem) {
+            flex-direction: column-reverse;
+            padding-top:80px;
+            text-align: center;
+            gap: 1rem;
+            // transition: all ease 0.3s;
+       }
+    
+       
+       gap: 5%;
+        .left-container{
+           
+          .hithere{
+            font-size: 60px;
+            color: hsl(207, 10%, 13%);
+            letter-spacing: -0.0269em;
+            @media (max-width:67.5rem) {
+                font-size: 40px;
+            line-height: 2rem;
+            padding-top: .5rem;
+            transition: all ease 0.3s;
+            }
+            @media (max-width:23.75rem) {
+                font-size: 30px;
+                transition: all ease 0.3s;
+         
+            }
+    
+          }
+            .name{
+                padding-bottom: 0.5rem;
+               color: hsl(207, 10%, 13%);
+               font-size: 70px;
+               letter-spacing: -0.0269em;
+               font-weight: 700;
+               @media (max-width:67.5rem) {
+               font-size: 50px;
+               transition: all ease 0.3s;
+        
+           }
+
+           @media (max-width:57rem) {
+            padding-bottom: 0;
+            transition: all ease 0.3s;
+     
+        }
+        @media (max-width:23.75rem) {
+            font-size: 40px;
+            transition: all ease 0.3s;
+     
+        }
+           
+           
+            }
+            .type-animation{
+                color:hsl(207, 10%, 13%);
+               @media (max-width:57rem) {
+                margin: 0 auto ;
+                
+               }
+            }
+
+            .hero-text{
+             max-width:500px;
+                p{
+                    padding:0.5rem 0 1rem;
+                    color: gray;
+                    @media (max-width:57rem) {
+                        padding-bottom: 0.5rem;
+                        transition: all ease 0.3s;
+                 
+                    }
+                    @media (max-width:23.75rem) {
+                        font-size: 0.8rem;
+                        transition: all ease 0.3s;
+                 
+                    }
+                       
+    
+                }
+            }
+           
+            .btn-download{
+                // &::before{
+                //     content: "Download Resume?";
+                //     position: absolute;
+                //     color:  #284b63;
+                //     font-weight: 400;
+                //     right:0;
+                //     bottom: 8.5px;
+                //     width: 140px;
+                //     z-index: -1;
+                //     transition: all ease 0.5s;
+
+                // }
+                // position: relative;
+            text-decoration: none;
+            color: white;
+            background-color: #e16259;
+            transition: all ease 0.3s;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 8px;
+            border: 1px solid #be5643;
+          
+            &:hover{
+                background-color:#ae5951;
+                color: #fff;
+                // &:before{
+                //     right: -140px ;
+                //     bottom: auto;
+                
+                //     @media (max-width:30rem) {
+                //         bottom: -20px ;
+                //         right:0;
+                //     }
+                // }
+               
+            }
+            @media (max-width:57rem) {
+                margin-bottom: 1.5rem;
+                transition: all ease 0.3s;
+         
+            }
+            }
+
+        }
+        .right-container{
+            
+
+            img{
+                color: grey;
+             width: 100%;
+           @media (max-width:57rem) {
+         width: 80%;
+            transition: all ease 0.3s;
+        }
+    
+            }
+        }
+
+    }
+
+
+}

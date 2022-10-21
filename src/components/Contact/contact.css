@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact .left-container {
+  flex: 1;
+}
+.contact .left-container img {
+  width: 330px;
+}
+.contact .right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.4rem;
+}
+.contact .right-container h2 {
+  font-size: 30px;
+}
+.contact .right-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.contact .right-container form input {
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+}
+.contact .right-container form textarea {
+  width: 300px;
+  height: 200px;
+  font-size: 14px;
+}
+.contact .right-container form button {
+  width: 150px;
+  height: 35px;
+  color: hsl(207deg, 10%, 13%);
+  border-radius: 10px;
+  border-color: grey;
+  background-color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 0;
+  transition: all ease 0.3s;
+}
+.contact .right-container form button:hover {
+  color: white;
+  background-color: hsl(207deg, 10%, 13%);
+}
+.contact .right-container form span {
+  color: green;
+  margin: 0;
+}/*# sourceMappingURL=contact.css.map */

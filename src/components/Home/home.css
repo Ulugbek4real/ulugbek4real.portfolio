@@ -1,0 +1,66 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 75%;
+  margin: 0 auto;
+}
+.home .bg {
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  position: absolute;
+  font-size: 100px;
+  color: #f1f1f1;
+  top: 100px;
+  z-index: -100;
+}
+.home .bg-circle {
+  width: 300px;
+  height: 300px;
+  background-color: #f1f1f1;
+  position: absolute;
+  border-radius: 50%;
+  top: -100px;
+  right: 30px;
+}
+.home .home-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  gap: 5rem;
+}
+.home .home-center .left-container .name {
+  margin-left: 4rem;
+  padding-bottom: 0.5rem;
+  color: hsl(207deg, 10%, 13%);
+  font-size: 70px;
+}
+.home .home-center .left-container p {
+  padding: 1rem 0;
+  color: gray;
+}
+.home .home-center .left-container .btn-download {
+  width: 150px;
+  height: 35px;
+  color: hsl(207deg, 10%, 13%);
+  background-color: #fff;
+  transition: all ease 0.3s;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.home .home-center .left-container .btn-download:hover {
+  background-color: hsl(207deg, 10%, 13%);
+  color: #fff;
+}
+.home .home-center .right-container img {
+  color: grey;
+}
+
+@media screen and (max-width: 700px) {
+  .home .home-center .right-container {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */

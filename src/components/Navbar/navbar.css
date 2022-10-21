@@ -1,0 +1,138 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  color: hsl(207deg, 10%, 13%);
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+.navbar .wrapper {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.navbar .wrapper .logo {
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.navbar .wrapper .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar .wrapper .social-icons a {
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .wrapper .social-icons a:hover {
+  transform: scale(1.3);
+}
+.navbar .wrapper .social-icons a .linkedin:hover {
+  color: #0077b5;
+}
+.navbar .wrapper .social-icons a .instagramm:hover {
+  color: rgb(221, 42, 123);
+}
+.navbar .wrapper .social-icons a .github:hover {
+  color: hsl(274deg, 78%, 29%);
+}
+.navbar .wrapper .social-icons a .telegram:hover {
+  color: #0088cc;
+}
+.navbar .wrapper .burger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar .wrapper .burger span {
+  width: 100%;
+  height: 3px;
+  background-color: hsl(207deg, 10%, 13%);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+.navbar .wrapper .links {
+  display: none;
+}
+.navbar .wrapper .links li {
+  transition: all 0.3s ease;
+}
+.navbar .wrapper .links li:hover {
+  color: #284b63;
+  transform: scale(1.3);
+}
+.navbar.active {
+  background-color: hsl(207deg, 10%, 13%);
+  color: white;
+}
+.navbar.active .burger {
+  transform: rotate(360deg);
+  transition: all 1s ease;
+}
+.navbar.active .burger span:first-child {
+  background-color: white;
+  transform: rotate(45deg);
+}
+.navbar.active .burger span:nth-child(2) {
+  opacity: 0;
+}
+.navbar.active .burger span:last-child {
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .navbar .wrapper .burger {
+    display: none;
+  }
+  .navbar .wrapper .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    padding-left: 0;
+  }
+  .navbar .wrapper .links li a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .links {
+    font-size: larger;
+  }
+  .links li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.icons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 570px) {
+  .wrapper .icons {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */
