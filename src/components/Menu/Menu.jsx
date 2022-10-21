@@ -7,16 +7,16 @@ export default function Menu({menuOpen,handleMenu}) {
     <div className={'menu ' + (menuOpen && "active")}>
         <ul>
             <li>
-                <Link href="/">Home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li>
-                <Link href="/resume">Resume</Link>
+                <Link to="/resume">Resume</Link>
             </li>
             <li>
-                <Link href="/projects">Projects</Link>
+                <Link to="/projects">Projects</Link>
             </li>
             <li>
-                <Link href="/contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
             </li>
         </ul>
         <div className="menuIcons">
