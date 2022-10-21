@@ -108,8 +108,8 @@ useEffect(() => {
 
         </div>
         <div className="project-links">
-        <a  href="https://ulugbek4real.herokuapp.com/" target="_blank" className="project-link">View the site</a>
-         <a href="https://github.com/Ulugbek4real/portfolio" className="github" target="_blank"><FaGithub /></a>
+        <a  href="https://ulugbek4real.netlify.app/" target="_blank" className="project-link">View the site</a>
+         <a href="https://github.com/Ulugbek4real/ulugbek4real.portfolio" className="github" target="_blank"><FaGithub /></a>
         </div>
         </div>
       
@@ -146,7 +146,7 @@ useEffect(() => {
 
         </div>
         <div className="project-links">
-        <a href="#" target="_blank" className="project-link">View the site</a>
+        <a href="https://w0rdle-react-ulugbek4real.netlify.app" target="_blank" className="project-link">View the site</a>
          <a href="https://github.com/Ulugbek4real/wordle-react" className="github" target="_blank"><FaGithub /></a>
         </div>
         </div>
