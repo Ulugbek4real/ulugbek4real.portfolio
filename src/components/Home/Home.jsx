@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from 'react';
 import {BsDownload} from "react-icons/bs"
 import Bounce from 'react-reveal/Bounce';
 import { init } from 'ityped'
-import { Link } from "react-router-dom";
 
 
 export default function Home() {
