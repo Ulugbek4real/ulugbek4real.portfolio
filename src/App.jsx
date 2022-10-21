@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Bounce from 'react-reveal/Bounce';
 import { useEffect, useState } from "react";
-import {Route, Routes } from 'react-router-dom'
+import {Route, Routes, useLocation } from 'react-router-dom'
 import About from "./components/Resume/About";
 import "./app.scss"
 function App() {
@@ -30,6 +30,10 @@ function App() {
   window.addEventListener("resize", handleResize)
   return () =>  window.removeEventListener("resize", handleResize)
   },[wsize])
+  const location = useLocation()
+  useEffect(()=>{
+    setMenuOpen(false);
+    },[location.key])
   // document.body.style.overflow = "scroll";
   return (
     <div className="app">
